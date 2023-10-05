@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gender Checker</title>
-    <link rel="stylesheet" href="image/g image.jpeg">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="image/g image.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <center>
-        <div class="gender">
-            <h1>Gender Checkingname System</h1>
-            <p>check your gender in this place</p>
-            <input type="text" placeholder="Enter a name" id="userInput">
-            <button onclick="Entername()">Check</button>
-            <div id="display"></div>
-        </div>
-        <!-- <h1>Gender Checkingname System</h1>
+      <div class="gender">
+        <h1>Gender Checkingname System</h1>
+        <p>check your gender in this place</p>
+        <input type="text" placeholder="Enter a name" id="userInput" />
+        <button onclick="Entername()">Check</button>
+        <div id="display"></div>
+      </div>
+      <!-- <h1>Gender Checkingname System</h1>
         <p>check your gender in this place</p>
         <input type="text" placeholder="Enter a name" id="userInput">
         <button onclick="Entername()">Entername</button>
         <div id="display"></div> -->
     </center>
     <script>
-        // console.log(document.getElementById("display"))
-        function Entername(){
-            var inp = userInput.value
-       if (inp == "abdraheem" || inp =="abdrahman" || inp =="faruq" || inp =="ridwan" || inp =="ahmad" || inp =="muhammed" || inp =="abd qudoos" || inp =="yaqoob"){
-        console.log(inp + " is a male ");
-        display.innerHTML = inp + " is a male " 
-       }else if(inp == "maraim" || inp =="zainab" || inp =="fatimah" ){
-        console.log(inp +" is a female ");
-        display.innerhtml =inp + " is a female " 
-       }else if(inp == "aamal" || inp =="sumayah" || inp =="raheemah" ){
-        console.log(inp +" is a male or female ");
-        display.innerhtml =inp + " is a male or female"
-       }else{
-        console.log(" this name is are not exit");
-        display.innerHTML=inp + " this name is not exit"
-       }
-    }
+      // console.log(document.getElementById("display"))
+      function Entername() {
+        var inp = userInput.value;
+        if (
+          inp == "abdraheem" ||
+          inp == "abdrahman" ||
+          inp == "faruq" ||
+          inp == "ridwan" ||
+          inp == "ahmad" ||
+          inp == "muhammed" ||
+          inp == "abd qudoos" ||
+          inp == "yaqoob"
+        ) {
+          console.log(inp + " is a male ");
+          display.innerHTML = inp + " is a male ";
+        } else if (inp == "maraim" || inp == "zainab" || inp == "fatimah") {
+          console.log(inp + " is a female ");
+          display.innerhtml = inp + " is a female ";
+        } else if (inp == "aamal" || inp == "sumayah" || inp == "raheemah") {
+          console.log(inp + " is a male or female ");
+          display.innerhtml = inp + " is a male or female";
+        } else {
+          console.log(" this name is are not exit");
+          display.innerHTML = inp + " this name is not exit";
+        }
+      }
     </script>
-  
-</body>
+  </body>
 </html>
